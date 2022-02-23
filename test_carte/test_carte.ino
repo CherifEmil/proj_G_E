@@ -1,8 +1,8 @@
 #include <WiFi.h>
 #include <WiFiClient.h>
 #include <HTTPClient.h>
-#define WIFI_NETWORK "emil_anna"
-#define WIFI_PASSWORD "skripnikovaAmine1!"
+#define WIFI_NETWORK ""
+#define WIFI_PASSWORD ""
 #define WIFI_PASSWORD_MS 20000
 
 const char* serverName = "http://10.0.0.157:80/project/project_GE/post-esp-data.php";
