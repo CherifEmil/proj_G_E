@@ -1,0 +1,234 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Indie Flower', cursive;
+}
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    
+}
+ul.ba {
+    list-style-type: none;
+}
+textarea {
+    resize: none;
+  }
+body{
+    position:relative;
+    min-height: 100vh; 
+    width: 100%;
+    background: linear-gradient(-45deg, #0ac523, #b2db1b, #ee4603, #d32b15);
+   background-size: 400% 400%;
+    overflow:hidden;
+    animation: gradient 5s ease infinite;
+    overflow: auto;
+}
+#sect_1{
+    display: none;
+}
+#cont1{
+    display:block;
+    position: relative;
+    text-align:center;
+    background-color: rgba(62, 63, 63, 0.89);
+    top:100px;
+    left: 25%;
+    width:50%;
+    height: 600px;
+    box-shadow: 0 6px  10px rgba(5, 61, 75, 0.7);
+    border-radius: 12px;  
+    border: 4px ridge rgba(17, 16, 29, 1);
+    animation: gradient 5s ease infinite;
+    transition:all 1s ease;  
+    overflow: auto;
+}
+#input_d{
+    position:relative;
+    left: -120px;
+    width: 700px;
+    background-color: rgba(118, 8, 146, 0);
+
+}
+#input_d label{
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 0 -10px  10px rgb(248, 215, 206);
+}
+#input_d input{
+    height: 40px;
+    width: 250px;
+    text-align: center;
+    font-size: 30px;
+}
+#nb_crit_alert ,#nb_incert_crit_alert{
+    background-color: #d32b15af;
+}
+#nb_crit_war,#nb_incert_crit_war{
+    background-color: #e7c504af;
+}
+#set_Param{
+    font-size: 20px;
+    width: 300px;
+    height: 40px;
+    transition:all 2s ease;
+}
+#set_Param:hover{
+    font-size: 20px;
+    width: 300px;
+    background-color: #0ac523;
+    transition:all 1s ease;
+    height: 40px;
+}
+table{
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    width: 48%;
+    text-align: center;
+    border-radius: 5%;
+    background-color: rgb(213, 226, 29);
+    box-shadow: 0px -10px  40px rgba(5, 61, 75, 0.7);
+    
+}
+#optdiv{
+
+    display: block;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    background-color: rgb(69, 197, 75);
+    border-radius: 20%;
+    height: 40%;
+    width: 48%;
+}
+#opt{
+    color: #d32b15;
+    font-size: 80px;
+}
+#run_code{
+    display:none;
+}
+#graphic{
+    position: relative;
+    top:200px;
+    left:55%;
+    width: 900px;
+    background-color: rgba(255, 255, 255, 0.808);
+    border-radius: 2%;
+    box-shadow: 0 -10px  10px rgba(5, 61, 75, 0.7);
+}
+#graphic_w{
+    position: relative;
+    top:-250px;
+    left:9%;
+    width: 900px;
+    background-color: rgba(255, 255, 255, 0.808);
+    border-radius: 2%;
+    box-shadow: 0 -10px  10px rgba(5, 61, 75, 0.7);
+
+}
+#sect_2{
+    display:block;
+    position:absolute;
+    top: 15%;
+    left: 15%;
+    height: 75%;
+    width: 75%;
+    border-radius: 10%;
+    background-color: #f0f1f08c;
+    box-shadow: 0 20px  20px rgba(5, 61, 75, 0.7);
+    border: 4px ridge rgba(17, 16, 29, 1);
+}
+#capt_state{
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 20px  20px rgba(236, 236, 234, 0.7);
+    border: 4px ridge rgba(17, 16, 29, 1);
+    top:25%;
+    left:35%;
+    width:500px;
+    height:500px;
+    
+}
+#réglage{
+    position: absolute;
+    top:5%;
+    left: 90%;
+}
+#i_réglage{
+    font-size: 100px;
+    box-shadow: 0px -1px  30px rgba(5, 61, 75, 0.7);
+    border-radius: 50%;
+    border: 4px ridge rgba(17, 16, 29, 1);
+    transition:all 2s ease;
+
+}
+#i_réglage:hover{
+    font-size: 100px;
+    background-color: rgba(255, 255, 255, 0.897);
+    border-radius: 50%;
+}
+
+/*mobile*/
+@media only screen and (max-device-width: 480px) {
+    body{
+        zoom:3.80;
+    }
+    .sidebar{
+        zoom:0.8;
+    }
+    table{
+        zoom: 0.5;
+        position: absolute;
+        left: 120px;
+        top: 10px;
+        text-align: center;
+        background-color: rgb(213, 226, 29);
+    }
+    #optdiv{
+        display: block;
+        position: absolute;
+        top: 150px;
+        left: 180px;
+        background-color: rgb(69, 197, 75);
+        height: 50px;
+        width: 10%;
+        overflow: hidden;
+    }
+}
+
+#att_imag{
+    position: absolute;
+    top: 25%;
+    font-size: 520px;
+}
+#war_imag{
+    position: absolute;
+    font-size: 520px;
+}
+#good_imag{
+    top: 5px;
+    left:-25px;
+    position: absolute;
+    font-size: 520px;
+}
+#i_no_signal{
+    position: absolute;
+    font-size: 520px;
+}

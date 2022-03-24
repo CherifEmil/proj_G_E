@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>   if((parseInt(window.localStorage.getItem("c_rssi"))!= '. $c_rssi .')
+        ||(parseInt(window.localStorage.getItem("r_rssi"))!= '. $r_rssi .')
+        ||(parseInt(window.localStorage.getItem("c_jrssi"))!= '. $c_jrssi .')
+        ||(parseInt(window.localStorage.getItem("r_rssi"))!= '. $r_jrssi .')){
+                     localStorage.setItem("admin_id",'. $admin_id . ');
+                    localStorage.setItem("admin_comment",'. $admin_comment .');
+                    localStorage.setItem("c_rssi",'. $c_rssi .');
+                    localStorage.setItem("r_rssi",'. $r_rssi  .');
+                    localStorage.setItem("c_jrssi",'. $c_jrssi .');
+                    localStorage.setItem("r_jrssi" ,'. $r_jrssi .');
+                    
+         alerte='. $c_rssi .';
+        delta_alerte= '. $r_rssi .';
+         warn= '. $c_jrssi .';
+        var delta_warn='. $r_jrssi .';
+        <label for="nb_crit_alert">RSSI critique pour l allert:</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" id="nb_crit_alert" ><br><br>
+        <label for="nb_incert_crit_alert">Incertitude de cette allerte:</label>
+        &nbsp;&nbsp;<input type="number" id="nb_incert_crit_alert"><br><br>
+        <label for="nb_crit_war">RSSI critique pour la zone jaune:</label>
+        <input type="number" id="nb_crit_war"><br><br>
+        <label for="nb_incert_crit_war">Incertitude de la zone jaune:</label>
+        &nbsp; &nbsp;&nbsp;<input type="number" id="nb_incert_crit_war"><br><br>
+        <label for="admin_api_key">Admin ID:</label>
+        &nbsp; &nbsp;&nbsp;<input type="text" id="admin_api_key"><br><br>
+        <button id="set_Param">Changer les paramètres</button>
+        }
+        else{
+
+        }
+        </script>
+        
+    
+</body>
+</html>

@@ -1,5 +1,5 @@
 <?php
-$servername ="localhost";
+$servername ="10.0.0.157:3306";
 $username ="kaiser";
 $password = "";
 $api_key_value = "tPmAT5Ab3j7F9";
@@ -50,3 +50,4 @@ function test_input($data) {
     $data = htmlspecialchars($data);
     return $data;
 }
+?>
